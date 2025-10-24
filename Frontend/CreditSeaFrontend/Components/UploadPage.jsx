@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom"; // import NavLink
 import "./UploadPage.css"; // import the CSS file
 
-export default function UploadXml({ uploadUrl = "http://localhost:5000/api/uploadData" }) {
+export default function UploadXml({ uploadUrl = "https://creditseadeploy.onrender.com/api/uploadData" }) {
   const [file, setFile] = useState(null);
   const [error, setError] = useState("");
   const [info, setInfo] = useState("");

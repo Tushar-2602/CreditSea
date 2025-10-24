@@ -10,7 +10,7 @@ const XMLDisplay = () => {
     setResponse(null);
 
     try {
-      const res = await fetch("http://127.0.0.1:5000/api/getData"); // change to your API endpoint
+      const res = await fetch("https://creditseadeploy.onrender.com/api/getData"); // change to your API endpoint
       const data = await res.json();
 
       if (res.status === 400) {
